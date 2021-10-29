@@ -11,6 +11,12 @@
 		395B83CF272BEAD200C0510E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395B83CE272BEAD200C0510E /* ContentView.swift */; };
 		395B83D1272BEAD400C0510E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 395B83D0272BEAD400C0510E /* Assets.xcassets */; };
 		395B83D4272BEAD400C0510E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 395B83D3272BEAD400C0510E /* Preview Assets.xcassets */; };
+		395B83E0272BF15300C0510E /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395B83DF272BF15300C0510E /* Repo.swift */; };
+		395B83E2272BF99B00C0510E /* ReposApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395B83E1272BF99B00C0510E /* ReposApi.swift */; };
+		395B83E4272BF9FD00C0510E /* ReposService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395B83E3272BF9FD00C0510E /* ReposService.swift */; };
+		395B83E6272C07D500C0510E /* ApiType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395B83E5272C07D500C0510E /* ApiType.swift */; };
+		395B83E8272C08AA00C0510E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395B83E7272C08AA00C0510E /* NetworkManager.swift */; };
+		395B83EF272C0AFE00C0510E /* JsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395B83EE272C0AFE00C0510E /* JsonDecoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		395B83CE272BEAD200C0510E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		395B83D0272BEAD400C0510E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		395B83D3272BEAD400C0510E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		395B83DF272BF15300C0510E /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		395B83E1272BF99B00C0510E /* ReposApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposApi.swift; sourceTree = "<group>"; };
+		395B83E3272BF9FD00C0510E /* ReposService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposService.swift; sourceTree = "<group>"; };
+		395B83E5272C07D500C0510E /* ApiType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiType.swift; sourceTree = "<group>"; };
+		395B83E7272C08AA00C0510E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		395B83EE272C0AFE00C0510E /* JsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDecoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +86,7 @@
 		395B83DA272BEF3A00C0510E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				395B83DF272BF15300C0510E /* Repo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -81,6 +94,8 @@
 		395B83DC272BEF4B00C0510E /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				395B83E9272C08C700C0510E /* Api */,
+				395B83EA272C08E300C0510E /* NetworkManager */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -95,8 +110,27 @@
 		395B83DE272BEFB700C0510E /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				395B83EE272C0AFE00C0510E /* JsonDecoder.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		395B83E9272C08C700C0510E /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				395B83E5272C07D500C0510E /* ApiType.swift */,
+				395B83E1272BF99B00C0510E /* ReposApi.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		395B83EA272C08E300C0510E /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				395B83E7272C08AA00C0510E /* NetworkManager.swift */,
+				395B83E3272BF9FD00C0510E /* ReposService.swift */,
+			);
+			path = NetworkManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +203,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				395B83E6272C07D500C0510E /* ApiType.swift in Sources */,
+				395B83E4272BF9FD00C0510E /* ReposService.swift in Sources */,
+				395B83EF272C0AFE00C0510E /* JsonDecoder.swift in Sources */,
+				395B83E2272BF99B00C0510E /* ReposApi.swift in Sources */,
+				395B83E8272C08AA00C0510E /* NetworkManager.swift in Sources */,
+				395B83E0272BF15300C0510E /* Repo.swift in Sources */,
 				395B83CF272BEAD200C0510E /* ContentView.swift in Sources */,
 				395B83CD272BEAD200C0510E /* RepositoriesApp.swift in Sources */,
 			);
