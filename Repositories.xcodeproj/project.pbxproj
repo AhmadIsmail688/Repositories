@@ -22,6 +22,8 @@
 		395B83F8272CDCA600C0510E /* RepoCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395B83F7272CDCA600C0510E /* RepoCellViewModel.swift */; };
 		395B83FA272CDE3B00C0510E /* RandomDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395B83F9272CDE3B00C0510E /* RandomDate.swift */; };
 		395B840F272CE37D00C0510E /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395B840E272CE37D00C0510E /* DateFormatter.swift */; };
+		39AFFB84272D22BB004848D1 /* ReposList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AFFB83272D22BB004848D1 /* ReposList.swift */; };
+		39AFFB86272D22E5004848D1 /* ReposListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AFFB85272D22E5004848D1 /* ReposListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		395B83F7272CDCA600C0510E /* RepoCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoCellViewModel.swift; sourceTree = "<group>"; };
 		395B83F9272CDE3B00C0510E /* RandomDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDate.swift; sourceTree = "<group>"; };
 		395B840E272CE37D00C0510E /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		39AFFB83272D22BB004848D1 /* ReposList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposList.swift; sourceTree = "<group>"; };
+		39AFFB85272D22E5004848D1 /* ReposListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				395B83F5272C0E1300C0510E /* RepoCell.swift */,
+				39AFFB83272D22BB004848D1 /* ReposList.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -160,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				395B83F7272CDCA600C0510E /* RepoCellViewModel.swift */,
+				39AFFB85272D22E5004848D1 /* ReposListViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -239,12 +245,14 @@
 				395B83E4272BF9FD00C0510E /* ReposService.swift in Sources */,
 				395B83EF272C0AFE00C0510E /* JsonDecoder.swift in Sources */,
 				395B840F272CE37D00C0510E /* DateFormatter.swift in Sources */,
+				39AFFB86272D22E5004848D1 /* ReposListViewModel.swift in Sources */,
 				395B83E2272BF99B00C0510E /* ReposApi.swift in Sources */,
 				395B83F6272C0E1300C0510E /* RepoCell.swift in Sources */,
 				395B83FA272CDE3B00C0510E /* RandomDate.swift in Sources */,
 				395B83E8272C08AA00C0510E /* NetworkManager.swift in Sources */,
 				395B83F8272CDCA600C0510E /* RepoCellViewModel.swift in Sources */,
 				395B83E0272BF15300C0510E /* Repo.swift in Sources */,
+				39AFFB84272D22BB004848D1 /* ReposList.swift in Sources */,
 				395B83CF272BEAD200C0510E /* ContentView.swift in Sources */,
 				395B83CD272BEAD200C0510E /* RepositoriesApp.swift in Sources */,
 			);
@@ -377,7 +385,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Repositories/Preview Content\"";
-				DEVELOPMENT_TEAM = 66END554YB;
+				DEVELOPMENT_TEAM = L5WD9S6X36;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -406,7 +414,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Repositories/Preview Content\"";
-				DEVELOPMENT_TEAM = 66END554YB;
+				DEVELOPMENT_TEAM = L5WD9S6X36;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
