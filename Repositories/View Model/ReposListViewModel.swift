@@ -14,6 +14,8 @@ import Foundation
     
     @Published var searchText = ""
     
+    var reposService: ReposService
+    
     fileprivate var repoCells: [RepoCellViewModel] {
         repos.map{RepoCellViewModel(repo: $0)}
     }
@@ -27,18 +29,20 @@ import Foundation
             }
         }
     }
-    
-    init() {
+        
+    init(reposService: ReposService = NetworkManager.shared) {
+        self.reposService = reposService
         Task{ await getRepos() }
     }
     
     init(repos: [Repo]) {
+        self.reposService = NetworkManager.shared
         self.repos = repos
     }
     
     func getRepos() async {
         do {
-            repos = try await NetworkManager.shared.getRepos()
+            repos = try await reposService.getRepos()
         } catch {
             self.error = error
         }
