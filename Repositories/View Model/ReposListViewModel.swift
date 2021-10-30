@@ -12,8 +12,20 @@ import Foundation
     @Published var repos = [Repo]()
     @Published var error: Error?
     
-    var repoCells: [RepoCellViewModel] {
+    @Published var searchText = ""
+    
+    fileprivate var repoCells: [RepoCellViewModel] {
         repos.map{RepoCellViewModel(repo: $0)}
+    }
+    
+    var searchResults: [RepoCellViewModel] {
+        if searchText.count < 2 {
+            return repoCells
+        } else {
+            return repoCells.filter {
+                $0.name.lowercased().contains(searchText.lowercased())
+            }
+        }
     }
     
     init() {

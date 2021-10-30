@@ -13,9 +13,10 @@ struct ReposList: View {
     
     var body: some View {
         NavigationView {
-            List(viewModel.repoCells) { cellViewModel in
+            List(viewModel.searchResults) { cellViewModel in
                 RepoCell(viewModel: cellViewModel)
             }
+            .searchable(text: $viewModel.searchText)
             .navigationTitle("Repositories")
         }
     }
