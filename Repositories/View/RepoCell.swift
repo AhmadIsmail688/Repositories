@@ -13,18 +13,9 @@ struct RepoCell: View {
     
     var body: some View {
         HStack(spacing: 10) {
-            AsyncImage(url: viewModel.ownerAvatarUrl) { image in
-                image.resizable()
-            } placeholder: {
-                Image(systemName: "person.circle.fill").resizable()
-                    .foregroundColor(.gray)
-            }
-            .aspectRatio(contentMode: .fit)
-            .frame(width: 65, height: 65, alignment: .center)
-            .clipShape(Circle())
-            
+            AvatarImage(url: viewModel.ownerAvatarUrl, diameter: 65)
             VStack(alignment: .leading, spacing: 5) {
-                VStack(alignment: .leading, spacing: 0) {
+                VStack(alignment: .leading) {
                     Text(viewModel.name)
                         .font(.title3)
                     Text(viewModel.ownerName)

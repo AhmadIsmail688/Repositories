@@ -17,6 +17,7 @@ struct DummyRepo {
     )
     
     static let defaultRepo = Repo(
+        name: "grit",
         fullName: "mojombo/grit",
         owner: defaultOwner,
         htmlUrl: URL(string: "https://github.com/mojombo/grit")!,

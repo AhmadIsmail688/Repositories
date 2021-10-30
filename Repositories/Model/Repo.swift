@@ -13,6 +13,7 @@ enum OwnerType: String, Decodable {
 }
 
 struct Repo: Decodable {
+    let name: String
     let fullName: String
     let owner: RepoOwner
     let htmlUrl: URL
