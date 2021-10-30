@@ -9,4 +9,6 @@ import Foundation
 
 struct NetworkManager {
     
+    static var shared = NetworkManager()
+    
 }
